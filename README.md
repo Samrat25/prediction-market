@@ -79,8 +79,8 @@ This contract powers the core logic for the Yes/No betting system on the Aptos b
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd betverse-landing-page
+   git clone https://github.com/Samrat25/prediction-market
+   cd prediction-market
    ```
 
 2. **Install dependencies**
