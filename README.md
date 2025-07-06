@@ -1,198 +1,177 @@
-# Yes/No Prediction Market Website on Aptos
+# BetVerse - Interactive Entertainment Platform
 
-A modern React-based prediction market website built on the Aptos blockchain, allowing users to stake on Yes/No predictions using Petra Wallet through their web browser.
+A modern, attractive React landing page featuring a current affairs quiz game and yes/no betting platform with eye-catching animations and beautiful UI design.
 
-## Features
+## 🚀 Features
 
-- 🔗 **Petra Wallet Integration** - Connect and interact with Aptos blockchain via web browser
-- 📊 **Prediction Cards** - Beautiful responsive UI for viewing and participating in predictions
-- 💰 **Staking System** - Stake APT tokens on YES or NO outcomes
-- 📱 **Responsive Design** - Works perfectly on desktop, tablet, and mobile browsers
-- 🎨 **Modern Web UI** - Built with React and Tailwind CSS
-- 🔄 **Real-time Updates** - Live updates of staking amounts and percentages
-- 🌐 **Web3 Ready** - Full blockchain integration for web applications
+### Hero Section
+- Attractive gradient background with floating animated cards
+- Call-to-action buttons for quiz and betting sections
+- Particle animations for visual appeal
+- Responsive design for all devices
 
-## Tech Stack
+### Quiz Game Section
+- Interactive current affairs quiz with sample questions
+- Animated option selection with correct/incorrect feedback
+- Feature highlights (Daily Updates, Leaderboards, Rewards)
+- Modern card design with hover effects
 
-### Frontend (Website)
-- React 18 with TypeScript
-- Tailwind CSS for responsive styling
-- Petra Wallet SDK for web browser integration
-- Context API for state management
-- Responsive web design
+### Yes/No Betting Section
+- Interactive betting odds display
+- Real-time odds calculation
+- Bet amount selector with slider and preset buttons
+- Potential winnings calculator
+- Feature highlights (Secure Platform, Real-time Odds, Instant Payouts)
 
-### Backend (Web Server)
-- Node.js with Express
-- Aptos SDK for blockchain integration
-- RESTful API design
-- CORS enabled for web browser communication
+### About Us Section
+- Company mission, vision, and values
+- Animated statistics with counters
+- Modern card layout with hover animations
+- Responsive grid design
 
-## Quick Start
+### Contact Section
+- Contact information with animated icons
+- Interactive contact form with validation
+- Newsletter signup functionality
+- Modern glassmorphism design
 
-### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
-- Petra Wallet browser extension
-- Modern web browser (Chrome, Firefox, Safari, Edge)
+### Footer
+- Company information and social media links
+- Quick navigation links
+- Support links
+- Newsletter subscription form
 
-### Installation
+## 🎨 Design Features
+
+- **Modern UI/UX**: Clean, professional design with gradient backgrounds
+- **Smooth Animations**: Framer Motion animations throughout the application
+- **Responsive Design**: Fully responsive for desktop, tablet, and mobile
+- **Interactive Elements**: Hover effects, button animations, and form interactions
+- **Eye-catching Visuals**: Floating cards, particle effects, and gradient text
+- **Accessibility**: Proper semantic HTML and keyboard navigation
+
+## 🛠️ Technologies Used
+
+- **React 18**: Modern React with hooks and functional components
+- **Framer Motion**: Smooth animations and transitions
+- **CSS3**: Modern CSS with Grid, Flexbox, and custom properties
+- **Font Awesome**: Icons for enhanced visual appeal
+- **Google Fonts**: Poppins font family for typography
+
+## 📦 Installation
 
 1. **Clone the repository**
-```bash
-git clone <repository-url>
-cd prediction-market
+   ```bash
+   git clone <repository-url>
+   cd betverse-landing-page
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+4. **Open your browser**
+   Navigate to `http://localhost:3000` to view the application
+
+## 🚀 Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm build` - Builds the app for production
+- `npm test` - Launches the test runner
+- `npm eject` - Ejects from Create React App (not recommended)
+
+## 📱 Responsive Design
+
+The application is fully responsive and optimized for:
+- **Desktop**: 1200px and above
+- **Tablet**: 768px to 1199px
+- **Mobile**: 480px to 767px
+- **Small Mobile**: Below 480px
+
+## 🎯 Key Features
+
+### Navigation
+- Fixed navigation bar with smooth scrolling
+- Mobile hamburger menu
+- Active section highlighting
+
+### Animations
+- Loading screen with spinning logo
+- Scroll-triggered animations
+- Hover effects on interactive elements
+- Floating card animations in hero section
+
+### Interactive Elements
+- Quiz option selection with feedback
+- Betting odds selection
+- Contact form with validation
+- Newsletter subscription
+
+## 🎨 Color Scheme
+
+- **Primary Gradient**: #667eea to #764ba2
+- **Secondary Gradient**: #ffd89b to #19547b
+- **Text Colors**: #2d3748 (dark), #718096 (medium), #a0aec0 (light)
+- **Background**: White and gradient backgrounds
+- **Accent**: #667eea (blue), #48bb78 (green), #f56565 (red)
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.js & Navbar.css
+│   ├── Hero.js & Hero.css
+│   ├── QuizSection.js & QuizSection.css
+│   ├── BettingSection.js & BettingSection.css
+│   ├── AboutSection.js & AboutSection.css
+│   ├── ContactSection.js & ContactSection.css
+│   └── Footer.js & Footer.css
+├── App.js & App.css
+├── index.js & index.css
+└── public/
+    └── index.html
 ```
 
-2. **Install website dependencies**
-```bash
-npm install
-```
+## 🔧 Customization
 
-3. **Install backend server dependencies**
-```bash
-cd backend
-npm install
-cd ..
-```
+### Colors
+Update the CSS custom properties in `src/index.css` to change the color scheme.
 
-4. **Start the backend web server**
-```bash
-cd backend
-npm run dev
-```
+### Content
+Modify the text content in each component file to customize the messaging.
 
-5. **Start the frontend website**
-```bash
-# In a new terminal
-npm start
-```
+### Animations
+Adjust animation parameters in the Framer Motion components to change timing and effects.
 
-The website will be available at `http://localhost:3000`
+## 🌟 Future Enhancements
 
-## Website Structure
+- Backend integration for real quiz data
+- User authentication system
+- Real-time betting functionality
+- Leaderboard system
+- Payment integration
+- Admin dashboard
+- Multi-language support
 
-```
-prediction-market/
-├── src/
-│   ├── components/
-│   │   ├── Header.tsx          # Website navigation and wallet connection
-│   │   ├── PredictionList.tsx  # List of all predictions
-│   │   ├── PredictionCard.tsx  # Individual prediction card
-│   │   └── WalletInfo.tsx      # Web3 wallet information display
-│   ├── context/
-│   │   └── WalletContext.tsx   # Petra wallet state management
-│   ├── services/
-│   │   └── api.ts             # Backend web API communication
-│   └── App.tsx                # Main website component
-├── backend/
-│   ├── server.js              # Express web server
-│   ├── package.json           # Backend dependencies
-│   └── README.md              # Backend documentation
-└── README.md                  # This file
-```
+## 📄 License
 
-## Website Usage
+This project is open source and available under the [MIT License](LICENSE).
 
-### Connecting Wallet
-1. Install the Petra Wallet browser extension
-2. Open the website in your browser
-3. Click "Connect Petra Wallet" in the header
-4. Approve the connection in your wallet popup
+## 🤝 Contributing
 
-### Participating in Predictions
-1. Browse available predictions on the website
-2. Select a prediction you want to stake on
-3. Choose YES or NO
-4. Enter your stake amount in APT
-5. Click "Stake" to submit your prediction
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Sample Predictions
-The website includes sample predictions for:
-- Bitcoin price targets
-- Ethereum 2.0 launch
-- Bitcoin ETF approval
-- Aptos TVL milestones
+## 📞 Support
 
-## Web API Endpoints
+For support or questions, please contact us at support@betverse.com
 
-### Backend Web Server (Port 5000)
-- `GET /api/predictions` - Get all predictions
-- `GET /api/predictions/:id` - Get specific prediction
-- `POST /api/predictions/:id/stake` - Stake on a prediction
-- `GET /api/user/:address/stakes` - Get user's stakes
-- `GET /api/health` - Health check
+---
 
-## Development
-
-### Frontend Website Development
-```bash
-npm start          # Start development server
-npm run build      # Build for production
-npm test           # Run tests
-```
-
-### Backend Web Server Development
-```bash
-cd backend
-npm run dev        # Start with nodemon
-npm start          # Start production server
-```
-
-### Environment Variables
-Create a `.env` file in the backend directory:
-```
-PORT=5000
-APTOS_NODE_URL=https://fullnode.testnet.aptoslabs.com/v1
-```
-
-## Web3 Integration
-
-### Current Implementation
-- Uses Aptos testnet for development
-- Petra Wallet browser extension integration
-- Responsive web design for all devices
-- Web3 transaction simulation
-
-### Production Considerations
-- Deploy smart contracts to Aptos mainnet
-- Implement real transaction signing
-- Add proper error handling for failed transactions
-- Store prediction data on-chain
-- Implement proper web3 authentication
-
-## Browser Compatibility
-
-This website works with all modern browsers:
-- Chrome (recommended)
-- Firefox
-- Safari
-- Edge
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-## Support
-
-For support and questions:
-- Check the documentation
-- Open an issue on GitHub
-- Contact the development team
-
-## Roadmap
-
-- [ ] Smart contract deployment
-- [ ] Real blockchain transactions
-- [ ] User profile and history
-- [ ] Prediction creation interface
-- [ ] Advanced analytics
-- [ ] Progressive Web App (PWA) features
-- [ ] Social features 
+**Built with ❤️ using React and Framer Motion** 

@@ -1,0 +1,237 @@
+.quiz-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  position: relative;
+}
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.customer-reviews {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.customer-reviews::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.customer-reviews h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.reviews-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.review-card {
+  background: rgba(15, 23, 42, 0.98);
+  border-radius: 18px;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  transition: all 0.3s cubic-bezier(.4,2,.6,1);
+  border-left: 4px solid #667eea;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.25);
+  color: #fff;
+  position: relative;
+  animation: fadeInUp 0.7s ease;
+}
+
+.review-card::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  border-radius: 18px 18px 0 0;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+.review-card:hover {
+  background: rgba(30, 41, 59, 1);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.35);
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.avatar {
+  width: 54px;
+  height: 54px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 8px rgba(102,126,234,0.15);
+  border: 2.5px solid #fff;
+}
+
+.review-info h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.2rem;
+  letter-spacing: 0.2px;
+}
+
+.stars {
+  display: flex;
+  gap: 0.18rem;
+}
+
+.stars i {
+  color: #fbbf24;
+  font-size: 1.05rem;
+}
+
+.review-text {
+  color: #f3f4f6;
+  font-size: 1.13rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-top: 0.5rem;
+  letter-spacing: 0.1px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quiz-redirect-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redirect-card {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.redirect-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.redirect-icon {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.redirect-card h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.redirect-card p {
+  color: #e2e8f0;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.redirect-btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .quiz-section {
+    padding: 60px 0;
+  }
+
+  .quiz-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 20px;
+  }
+
+  .customer-reviews h3 {
+    font-size: 1.5rem;
+  }
+
+  .redirect-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .redirect-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .redirect-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+} 
