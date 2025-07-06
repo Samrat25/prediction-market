@@ -2,11 +2,22 @@
 
 A modern, attractive React landing page featuring a current affairs quiz game and yes/no betting platform with eye-catching animations and beautiful UI design.
 
+---
+
+## 🔗 Move Contract Address
+
+- **Deployed on Aptos:**  
+  `0x4e513ef348abada31428b53879498477d60f93946edfb84948313687d8fdd552`
+
+This contract powers the core logic for the Yes/No betting system on the Aptos blockchain.
+
+---
+
 ## 🚀 Features
 
 ### Hero Section
 - Attractive gradient background with floating animated cards
-- Call-to-action buttons for quiz and betting sections
+- Call-to-action buttons for quiz and betting sections                             
 - Particle animations for visual appeal
 - Responsive design for all devices
 
@@ -41,6 +52,8 @@ A modern, attractive React landing page featuring a current affairs quiz game an
 - Support links
 - Newsletter subscription form
 
+---
+
 ## 🎨 Design Features
 
 - **Modern UI/UX**: Clean, professional design with gradient backgrounds
@@ -50,6 +63,8 @@ A modern, attractive React landing page featuring a current affairs quiz game an
 - **Eye-catching Visuals**: Floating cards, particle effects, and gradient text
 - **Accessibility**: Proper semantic HTML and keyboard navigation
 
+---
+
 ## 🛠️ Technologies Used
 
 - **React 18**: Modern React with hooks and functional components
@@ -57,6 +72,8 @@ A modern, attractive React landing page featuring a current affairs quiz game an
 - **CSS3**: Modern CSS with Grid, Flexbox, and custom properties
 - **Font Awesome**: Icons for enhanced visual appeal
 - **Google Fonts**: Poppins font family for typography
+
+---
 
 ## 📦 Installation
 
@@ -79,12 +96,16 @@ A modern, attractive React landing page featuring a current affairs quiz game an
 4. **Open your browser**
    Navigate to `http://localhost:3000` to view the application
 
+---
+
 ## 🚀 Available Scripts
 
 - `npm start` - Runs the app in development mode
 - `npm build` - Builds the app for production
 - `npm test` - Launches the test runner
 - `npm eject` - Ejects from Create React App (not recommended)
+
+---
 
 ## 📱 Responsive Design
 
@@ -93,6 +114,8 @@ The application is fully responsive and optimized for:
 - **Tablet**: 768px to 1199px
 - **Mobile**: 480px to 767px
 - **Small Mobile**: Below 480px
+
+---
 
 ## 🎯 Key Features
 
@@ -113,6 +136,8 @@ The application is fully responsive and optimized for:
 - Contact form with validation
 - Newsletter subscription
 
+---
+
 ## 🎨 Color Scheme
 
 - **Primary Gradient**: #667eea to #764ba2
@@ -120,6 +145,8 @@ The application is fully responsive and optimized for:
 - **Text Colors**: #2d3748 (dark), #718096 (medium), #a0aec0 (light)
 - **Background**: White and gradient backgrounds
 - **Accent**: #667eea (blue), #48bb78 (green), #f56565 (red)
+
+---
 
 ## 📁 Project Structure
 
@@ -139,6 +166,8 @@ src/
     └── index.html
 ```
 
+---
+
 ## 🔧 Customization
 
 ### Colors
@@ -150,6 +179,8 @@ Modify the text content in each component file to customize the messaging.
 ### Animations
 Adjust animation parameters in the Framer Motion components to change timing and effects.
 
+---
+
 ## 🌟 Future Enhancements
 
 - Backend integration for real quiz data
@@ -160,18 +191,33 @@ Adjust animation parameters in the Framer Motion components to change timing and
 - Admin dashboard
 - Multi-language support
 
+---
+
+## 👨‍💻 Team Members
+
+| Name           | Email                     | Phone Number       |
+|----------------|---------------------------|--------------------|
+| Badhon Banerjee| bb792801@gmail.com        | +91-6291133676     |
+| Samrat Natta   | samratnatta993@gmail.com  | +91-7679585941     |
+| Sudhanshu sah  | sudhanshu.sah45@gmail.com | +91-8777054370     |
+---
+
 ## 📄 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+---
 
 ## 🤝 Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+---
+
 ## 📞 Support
 
-For support or questions, please contact us at support@betverse.com
+For support or questions, please contact us at **support@betverse.com**
 
 ---
 
-**Built with ❤️ using React and Framer Motion** 
+**Built with ❤️ using React, Framer Motion & Aptos Move**
