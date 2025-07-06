@@ -113,7 +113,7 @@ const PredictionCard: React.FC<PredictionCardProps> = ({ prediction, isConnected
           <div className="flex space-x-2">
             <button
               onClick={() => setSelectedOption('yes')}
-              className={`flex-1 py-1 px-2 rounded border text-sm transition-colors ${
+              className={`flex-1 py-1 px-2 rounded-full border text-xs font-bold transition-colors mr-1 ${
                 selectedOption === 'yes'
                   ? 'bg-green-500 text-white border-green-500'
                   : 'bg-white text-green-600 border-green-300 hover:bg-green-50'
@@ -124,7 +124,7 @@ const PredictionCard: React.FC<PredictionCardProps> = ({ prediction, isConnected
             </button>
             <button
               onClick={() => setSelectedOption('no')}
-              className={`flex-1 py-1 px-2 rounded border text-sm transition-colors ${
+              className={`flex-1 py-1 px-2 rounded-full border text-xs font-bold transition-colors ml-1 ${
                 selectedOption === 'no'
                   ? 'bg-red-500 text-white border-red-500'
                   : 'bg-white text-red-600 border-red-300 hover:bg-red-50'
